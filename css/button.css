@@ -1,0 +1,29 @@
+/* style.css */
+.buttonsheet {
+  display: inline-block;
+  padding: 10px 25px;       /* 상하 10px, 좌우 25px로 동그란 비율 유지 */
+  background-color: #24292e; /* 깃허브 느낌의 다크 그레이 */
+  color: #ffffff !important; /* 글자색 흰색 */
+  text-decoration: none;     /* 밑줄 제거 */
+  
+  border-radius: 50px;      /* 완전히 동그란 모서리 */
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  
+  transition: all 0.3s ease; /* 부드러운 애니메이션 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 살짝 떠 있는 느낌 */
+}
+
+/* 마우스를 올렸을 때(Hover) 효과 */
+.buttonsheet:hover {
+  background-color: #404448;  /* 색상 살짝 밝게 */
+  transform: translateY(-2px); /* 위로 살짝 들림 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* 그림자 진해짐 */
+}
+
+/* 클릭하는 순간 효과 */
+.buttonsheet:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
